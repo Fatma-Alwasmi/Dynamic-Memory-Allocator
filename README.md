@@ -37,8 +37,3 @@ Benefits:
 Efficiency: The main advantage of using an explicit free list is the improvement in search efficiency. By only having to traverse through free blocks, we avoid scanning potentially large chunks of allocated memory, making the allocation process faster.
 
 Better Utilization: With the explicit list, splitting a large free block to fit a requested size becomes more straightforward. Once split, the remaining free portion can be easily added back to the list.
-
- *  Work done:
- * Pauka Sy: Coalesce, realloc, expand_heap, first_fit, place
- * Fatma Alwasmi: struc blk, mm_init, malloc, free, max, lsb_a, get_size, get_allocated, next_blk, prev_blk, write_value, split,
- * both: mm_checkheap, debuging, remove_node, add_node
